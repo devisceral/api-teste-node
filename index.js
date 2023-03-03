@@ -7,7 +7,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-app.get("/hello", (req, res) => {
+app.get("/", (req, res) => {
   const data = { name: "John", age: 30, email: "john@example.com" };
   res.json(data);
 });
